@@ -1,0 +1,144 @@
+.conhecimentos-base{
+    position: relative;
+    background-color: #05d8e8;
+    width: 100%;
+    height: 100vh;
+}
+
+.janela{
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    
+    border-radius: 5%;
+
+    overflow: hidden;
+    box-shadow: 20px -20px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 20px -20px 10px rgba(0, 0, 0, 0.5); 
+      -moz-box-shadow: 20px -20px 10px rgba(0, 0, 0, 0.5); 
+       -ms-box-shadow: 20px -20px 10px rgba(0, 0, 0, 0.5); 
+        -o-box-shadow: 20px -20px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.painel{
+    width: 100%;
+    height: 100%;
+
+    padding: 5px 5px;
+    
+}
+
+.desc-conhecimento > .painel > *, .desc-conhecimento > .painel{
+    color: #bebeb6;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    letter-spacing: .05em;
+}
+
+.imgs-conhecimentos > .painel{
+    width: 70%;
+    overflow-y: scroll;
+}
+
+.texto-desc, .codigo{
+    color: #bebeb6;
+    font-family: 'VT323', monospace;
+
+}
+.imgs-conhecimentos{
+    top: 10%;
+    left: 40%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+.img-conhecimento{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+    margin: 10px;
+    cursor: pointer;
+
+    user-select: none;
+}
+.img-conhecimento > img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.desc-conhecimento{
+    top: 20%;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: rgb(8, 8, 8);
+}
+
+.barra-janela{
+    position: relative;
+    width: 100%;
+    height: 7%;
+
+    padding-left: 6%;
+    user-select: none;
+}
+
+.imgs-conhecimentos > .barra-janela{
+    background-color: #ddd;
+}
+
+.desc-conhecimento > .barra-janela{
+    background-color: rgb(0, 0, 0);
+}
+
+.circulo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.verde{
+    background-color: green;
+}
+
+.amarelo{
+    background-color: yellow;
+}
+
+.titulo-janela{
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.desc-conhecimento .titulo-janela{
+    color: white;
+}
+
+.user{
+    color:#829302 !important;
+}
+
+.path{
+    color: #246caa !important;
+}
+.cursor_pisca{
+    display: inline-block;
+    width: .5em;
+    height: 1em;
+    border-bottom: 3px solid #bebeb6;
+
+    animation: pisca 1s infinite linear;
+}

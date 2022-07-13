@@ -1,0 +1,97 @@
+.nav{
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+
+    padding: 20px;
+    overflow: hidden;
+}
+.link:not(:first-child){
+    margin-left: 40px;
+}
+
+.link > a{
+    position: relative;
+
+    font-size: 22px;
+    color: #1262cf;
+    text-decoration: none !important;
+
+    text-shadow: 0px 0px 10px #1262cf;
+    text-transform: capitalize;
+    
+}
+
+.link > a:hover{
+    color: #cb22ff;
+}
+
+
+.responsivo{
+    display: none;
+}
+@media screen and (min-width: 1001px) {
+    .link > a::after{
+        content: "";
+        
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        display: block;
+        width: 0px;
+        height: 3px;
+    
+        background-color: white;
+    
+        transition: width .5s;
+    
+    }
+    
+    .link > a:hover::after{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+
+    .nav{
+        flex-direction: column;
+        z-index: 100;
+
+        padding: 0px;
+
+        background-color: #252525;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 80%;
+
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+        border-right: 10px solid rgb(76, 64, 255);
+    }
+    .link{
+        position: relative;
+        padding: 10px 20px;
+        width: 100%;
+        margin-left: 0px !important;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+
+        transition: background .5s;
+    }
+    .link:hover > a{
+        color: white !important;
+    }
+    .link:hover{
+        background-color: rgb(76, 64, 255);
+        transition: background 0s;
+        border-right: 1px solid rgb(76, 64, 255);
+    }
+    
+    .responsivo{
+        display: inline-block;
+        width: 50px;
+    }
+}

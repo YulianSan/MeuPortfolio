@@ -1,0 +1,193 @@
+.home-img{
+    position: relative;
+    width : 100%;
+    min-height: 700px;
+    height:  120vh;
+    max-height: 1200px;
+
+    background: url(../../IMG/YulianSantiago.png) bottom right fixed no-repeat;
+    background-size: contain;
+    background-color: #0e0e0e;
+    
+}
+
+.home-img::after{
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 200px;
+    height: 20vh;
+
+    position: absolute;
+    bottom: 0px;
+
+    background-image: url(../../IMG/onda-inicio.png);
+    background-size: cover;
+}
+.texto-home{
+    font-size: 75px;
+    position: relative;
+
+    height: auto;
+    max-width: 900px;
+
+    top: 100px;
+    
+
+    padding-left: 10%;
+    
+}
+.nome{
+    color: transparent;
+    height: 3em;
+    width: max-content;
+
+    
+    /* text-shadow: 5px 5px 5px black; */
+
+    background: linear-gradient( #ff296d , #05d8e8 );
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    
+
+    filter: drop-shadow(0px 0px 10px #005679);
+    font-size: 1em;
+    text-transform: uppercase;
+
+    font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 1.2em;
+}
+
+.profissao{
+    color: #1ce3f1;
+    overflow-y: hidden;
+
+    box-sizing: initial;
+
+    text-shadow: 2px 2px 2px black;
+    font-size: 0.5em;
+    font-weight: 300;
+    line-height: 1.5em;
+
+    animation: deslisar 2s ;
+}
+
+@keyframes deslisar {
+    0%{
+        height: 0em;
+        margin-bottom: 3em;
+    }
+    100%{
+        height: 3em;
+        margin-bottom: 0em;
+    }
+}
+.nome, .profissao, .sobre-mim{
+    font-family: 'VT323', monospace;
+    width: max-content;
+
+}
+
+.animacao-cursor{
+    display: inline-block;
+
+    width: 0.05em;
+    height: .75em;
+    transform: translateY(5px);
+    background-color: white;
+    animation: pisca .7s linear infinite;
+}
+
+@keyframes pisca {
+    0%,49%{
+        opacity: 0;
+    }
+
+    51%,100%{
+        opacity: 1;
+    }
+}
+.sobre-mim{
+    font-size: 0.4em;
+    
+    cursor: pointer;
+    position: relative;
+
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: inset 0px 0px .5em .4em black,
+                0px 0px .5em .4em black;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    
+    border: 5px solid #3fff6f;
+    transition: background .5s;
+}
+
+.sobre-mim:hover{
+    background-color: #3b3b3b;
+}
+@media screen and (max-width: 800px) {
+    .texto-home{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .texto-home{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .texto-home{
+        font-size: 45px;
+        top: 180px;
+    }
+    .home-img{
+        
+        height: clamp( 300px , 80vh , 80vh );
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .home-img{
+        background-position: bottom left;
+        background-size: cover;
+    }
+
+    .texto-home{
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .texto-home{
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .texto-home{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .texto-home{
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .texto-home{
+        font-size: 22px;
+    }
+}

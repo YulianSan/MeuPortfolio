@@ -1,0 +1,79 @@
+.redes-sociais{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: min-content;
+    height: auto;
+    padding: 20px 10px;
+
+    user-select: none;
+    z-index: 10000;
+}
+
+.rede{
+
+    position: relative;
+    width : 35px;
+    height: 35px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.rede:not(:first-child){
+    margin-top: 5px;
+}
+.rede > *{
+    transform: skew(45deg,-25deg);
+    transition: top .5s;
+}
+.dgrade{
+    position:absolute;
+    top:0px;
+    
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+
+    display: inline-block;
+
+    background-color: var(--cor);
+    opacity: var(--opacidade);
+    user-select: none;
+
+}
+
+.rede:hover > .dgrade{
+    top: var(--sobe);
+}
+
+.icon{
+    position:absolute;
+    top: 0px;
+
+    line-height: 35px;
+    text-align: center;
+
+    font-size: 20px;
+    color: white;
+
+    display: block;
+    width : 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    
+    background-color: rgb(102, 102, 102);
+    background-color: var(--cor);
+}
+
+.rede:hover > .icon{
+    top: var(--sobe);
+}

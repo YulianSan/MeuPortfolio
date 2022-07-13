@@ -1,0 +1,35 @@
+*{
+    font-family: 'Mukta', sans-serif;
+    
+    padding: 0px;
+    margin : 0px;
+
+    box-sizing: border-box;
+}
+
+:root{
+    --corAzul: #00024d;
+}
+body{
+    position: relative;
+    margin: 0px auto;
+    max-width: 2000px;
+
+    /* background-image: linear-gradient( black,#1f1f1f,black ); */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(27, 27, 27);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255); 
+    border-radius: 20px;       
+    border: 3px solid rgb(0, 0, 0);  
+}
