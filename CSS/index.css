@@ -21,11 +21,11 @@ body{
 }
 
 body::-webkit-scrollbar {
-    width: 13px;               /* width of the entire scrollbar */
+    width: 13px;               
 }
 
 body::-webkit-scrollbar-track {
-    background: rgb(27, 27, 27);        /* color of the tracking area */
+    background: rgb(27, 27, 27);        
 }
 
 body::-webkit-scrollbar-thumb {
