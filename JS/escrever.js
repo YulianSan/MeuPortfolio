@@ -14,16 +14,16 @@ function CriarEscrita( objEscrita = {}) {
         
 
         if( /[<br\/>]{1}/.test(objEscrita.getTexto()[objEscrita.indice])) { 
-            objEscrita.indice++; 
+            objEscrita.indice += objEscrita.vel; 
             return;
         }
         
         objEscrita.elemento.innerHTML = 
             objEscrita.getTexto().slice(0, objEscrita.indice) + (objEscrita.fixo ? objEscrita.fixo: "");
         
-        objEscrita.indice++;
+        objEscrita.indice += objEscrita.vel;
     
-        if(objEscrita.indice > objEscrita.getTexto().length){
+        if(objEscrita.indice - objEscrita.vel > objEscrita.getTexto().length){
             clearInterval(objEscrita.temporizador);
             objEscrita.indice = 1;
     

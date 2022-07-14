@@ -7,6 +7,7 @@ const escreverInicio = {
     elemento: home_nome,
     tempo: 120,
     indice: 0,
+    vel: 1,
     fixo: "<div class='animacao-cursor'></div>"
 };
 
